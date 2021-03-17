@@ -1,0 +1,384 @@
+/* Variables */
+$rosa1: #FC6C8C;
+$rosa2: #FA3C5A;
+$rosa3: #F4908A;
+$turquesa1: #48B9A8;
+$turquesa2: #BAF1E4;
+$blanco: white;
+
+
+
+
+header {
+    color: $blanco;
+    nav {
+        width: 1500px;
+        margin: 0px;
+        text-align: center;
+      a {
+          color: $blanco;
+          padding: 10px;
+          text-decoration: none;
+          font-size: 15px;
+      }
+    }
+  }
+  
+.flexContenedor {
+        display: flex;
+        padding: 10px;
+        nav {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+        }
+    }
+  
+  body {
+      font-family:"Montserrat";
+      background-color: $rosa1;
+      margin: 0px;
+      padding: 0px;
+      border-bottom: 0px;
+      p {
+        color: $blanco;
+        font-size: 30px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+  }
+  
+.primera-seccion {
+    text-align: right;
+    text-transform: none;
+    margin-top: 110px;
+    margin-right: 150px;
+    margin-bottom: 140px;
+    h1 {
+        color: $blanco;
+        font-family:"Staatliches";
+        font-size: 80px;
+        text-transform: none;
+        margin-left: 1010px;
+        margin-bottom: 0px;
+        border-bottom: 1px solid $blanco;
+      }
+}
+
+section {
+        h1 {
+        animation-duration: 2s;
+        animation-name: aparecer;
+    }
+}
+  
+  @keyframes aparecer {
+      0% {opacity: 0;}
+      100% {opacity: 1;}
+    }
+    
+
+    
+.portafolio {
+      text-decoration: none;
+      padding: 10px;
+      font-weight: normal;
+      font-size: 20px;
+      color: $blanco;
+      background-color: $turquesa1;
+      border-radius: 6px;
+      hover,
+      focus {
+        background: $blanco;
+        color: $turquesa1;
+        transition: background-color 0.5s ease-out;
+    }
+}
+  
+.portafolio:active {
+      background-color: $rosa2;
+      color: $blanco;
+      }
+
+/* Conoceme */
+
+.seccion-conoceme {
+    display: grid;
+	grid-gap: 10px;
+	grid-template-columns: repeat(12, 100px);
+    grid-template-rows: repeat(6, 50px);
+    margin-top: 10px;
+    margin-bottom: 200px;
+      img {
+      grid-column: 3;
+      grid-row: 2/6;
+      margin: 10px;
+  }
+}
+
+.seccion-conoceme h2 {
+    grid-column: 6/8;
+    color: $blanco;
+    font-family:"Staatliches";
+    font-size: 50px;
+    text-align: left;
+    text-transform: none;
+    margin: 0px;
+}
+
+.seccion-conoceme p {
+    grid-column: 6/11;
+    grid-row: 2;
+    font-size: 15px;
+    text-align: left;
+}
+
+.seccion-conoceme {
+    h3 {
+    grid-column: 6/8;
+    grid-row: 4;
+    color: $blanco;
+    font-family:"Staatliches";
+    font-size: 30px;
+    text-align: left;
+    text-transform: none;
+    margin: 0px;
+    }
+}
+
+.seccion-conoceme {
+    div {
+        grid-column: 6/11;
+        grid-row: 5;
+        padding-left: 10px;
+    }
+}
+
+.pagina-conoceme {
+    font-family:"Montserrat";
+    margin: 0px;
+    padding: 0px;
+    border-bottom: 0px;
+      header nav a {
+        color: $blanco;
+  }
+}
+
+body {
+    li {
+        display: inline;
+        color: $blanco;
+        align-items: center;
+        padding: 20px;
+        padding-left: 0px;
+    }
+}
+
+section h2{
+    animation-duration: 2s;
+    animation-name: aparecer;
+
+}
+
+section h3{
+    animation-duration: 2s;
+    animation-name: aparecer;
+
+}
+
+@keyframes aparecer {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+/* Portafolio */
+
+.seccion-portafolio {
+    display: grid;
+	grid-gap: 10px;
+	grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 100px 1fr 1fr;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    h2 {
+        grid-column: 4;
+        color: $blanco;
+        font-family:"Staatliches";
+        font-size: 50px;
+        text-align: center;
+        text-transform: none;
+        margin: 0px;
+    }
+}
+
+.vetCare {
+    grid-column: 2;
+    justify-items: center;
+}
+
+.webAlex {
+    grid-column: 4;
+    justify-items: center;
+}
+
+.webTd {
+    grid-column: 6;
+    justify-items: center;
+}
+
+.webZen {
+    grid-column: 2;
+    grid-row: 3;
+    justify-items: center;
+}
+
+.mainNova {
+    grid-column: 4;
+    grid-row: 3;
+    justify-items: center;
+}
+
+.brandAlex {
+    grid-column: 6;
+    grid-row: 3;
+    justify-items: center;
+}
+
+.seccion-portafolio div {
+    color: $blanco;
+    font-size: 16px;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+        img {
+        box-shadow: 8px 8px $turquesa1
+    }
+}
+
+.img-port:hover {
+    transform: scale(1.1);
+    transition: transform 400ms ease-out, opacity 1000ms linear;
+}
+
+/* Contacto */
+
+.seccion-contacto {
+    display: grid;
+	grid-gap: 10px;
+	grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: auto auto auto auto auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    h2 {
+        grid-column: 3/6;
+        color: $blanco;
+        font-family:"Staatliches";
+        font-size: 50px;
+        text-align: center;
+        text-transform: none;
+        margin: 0px;
+    }
+}
+
+.seccion-contacto form input,
+.seccion-contacto form textarea {
+    width: 100%;
+    padding: .7em;
+    border: none;
+    background: none;
+    color: #fff;
+    border-bottom: 1px solid $turquesa1;
+}
+
+.seccion-contacto form .boton-enviar:hover,
+.seccion-contacto form .boton-enviar:focus {
+    background: white;
+    color: $turquesa1;
+    transition: background-color 0.5s ease-out;
+}
+
+.seccion-contacto form .boton-limpiar:hover,
+.seccion-contacto form .boton-limpiar:focus {
+    background: $blanco;
+    color: $rosa3;
+    transition: background-color 0.5s ease-out;
+}
+
+section p {
+    font-size: 18px;
+}
+
+form {
+    grid-column: 3/6;
+    grid-row: 3;
+    margin-bottom: 25px;
+}
+
+.boton-enviar {
+    text-decoration: none;
+    padding: 5px;
+    font-weight: small;
+    font-size: 15px;
+    color: $blanco;
+    background-color: $turquesa1;
+    border-radius: 6px;
+}
+
+.boton-limpiar {
+    text-decoration: none;
+    padding: 5px;
+    font-weight: small;
+    font-size: 15px;
+    color: $blanco;
+    background-color: $rosa3;
+    border-radius: 6px;
+}
+
+.seccion-contacto form .boton-limpiar:active {
+    background-color: $turquesa2;
+    color: $rosa2;
+}
+
+.seccion-contacto form .boton-enviar:active {
+    background-color: $rosa2;
+    color: $blanco;
+}
+
+/* footer */
+
+.logoGrulla {
+    display: flex;
+    flex-direction: row;
+}
+
+.logoGrulla {
+    justify-items: flex-start;
+}
+
+.logoRrss {
+	flex: 1;
+	display: flex;
+	align-items: center;
+    justify-content: flex-end;
+    margin-top: -65px;
+    margin-right: 10px;
+}
+
+.footer {
+    background-color: rgba(255, 255, 255, 0.1);
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px;
+    position: relative;
+    margin-bottom: 0px;
+    h5 {
+        color: $blanco;
+        font-size: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+footer img {
+    margin: 10px 10px 10px 10px;
+}
